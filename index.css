@@ -1,0 +1,55 @@
+  @font-face {
+    font-family: "lcd";
+    src: url("fonts/lcd-i.ttf");
+  }
+  
+  #console {
+    background-color: #444;
+    color: white;
+    border-radius: 8pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+  #display {
+    color: black;
+    background-color: #CDC; 
+    padding: 6pt;
+    border-radius: 12pt;
+    width: 440pt;
+    box-shadow: inset 0 0 5px #000;
+    }
+  #display.lit { 
+    background-color: orange; }
+     
+  #lampButton { 
+    font-size: 16pt;
+    background-color: gray;
+    border: 1pt solid black;
+    border-radius: 4pt;
+    padding: 0pt 8pt; }
+    
+  table#console tr:first-child > td { 
+    text-align: center;
+    font-size: 32pt; }
+    
+  .label { font-size: 12pt;
+    font-weight: 900;
+    text-align: left; }
+  td { 
+    padding: 0pt 12pt;
+    text-align: right; }
+  td:first-child + td { 
+    width: 120pt; }
+
+ .data { 
+    color: black;
+    font-style: normal;
+    font-family: "lcd"; 
+    font-weight: 900; 
+    text-shadow: 1pt 1pt 2pt white;
+    font-size: 48pt; }
+
+  #Vantage {
+    font-family: sans-serif;
+    font-size: 24pt;
+    text-align: right;
+    padding: 6pt; }
