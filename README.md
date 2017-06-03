@@ -1,2 +1,2 @@
 # literate-telegram
-Weather console
+WEATHER CONSOLE: a simple davis instruments weather console emulator using css and jquery.
