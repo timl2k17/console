@@ -13,9 +13,10 @@ function getWx() {
 	    i++;
     });
   });
+  move();
 }
 $(document).ready(function(){
-  setInterval(getWx, 2000);
+  setInterval(getWx, 5000);
   getWx();
   $( "#lampButton" ).click(function(){
     $("#display").toggleClass('lit');
@@ -33,5 +34,17 @@ function switchVar() {
     $("#heat").html("HEAT INDEX");
     $("#v6").attr("id", "v5");
     $( "#v5" ).html(value_array[5]);
+  }
+}
+function move() {
+  var width = 1;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      $("#progressBar").width(width + '%'); 
+    }
   }
 }
